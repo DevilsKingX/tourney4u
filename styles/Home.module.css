@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.searchContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background: linear-gradient(to bottom right, #AB1213,#f56642);
+  background-size: 200% 200%;
+  border-radius: 50px;
+  animation: gradient-move 2s ease infinite;
+  position: relative;
+}
+
+.searchInput{
+  width: 80vw;
+  max-width: 1440px;
+  height: 5vh;
+  border-radius: 50px;
+  font-size:15px;
+  font-weight: 600;
+  padding: 10px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.searchButton{
+  position: absolute;
+  background-color: #f5664220;
+  padding: 6px 15px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  right: 8px;
+  color: #f56642FF;
+}
+
+.searchButton:hover{
+  background-color: #AB1213;
+  background: linear-gradient(to bottom right, #AB1213,#f56642);
+  background-size: 200% 200%;
+  color: #000;
+}
+
+.resultsContainer{
+  width: 80vw;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #AB121323,#f5664223);
+  background-size: 200% 200%;
+  border-radius: 50px;
+  animation: gradient-move 2s ease infinite;
+  position: relative;
+  border: 3px solid rgba(255, 0, 0, 0.5);
+}
+
+
+.shortAnswer{
+  color: rgba(255,255,255,0.8);
+  font-size: 18px;
+}
+
+.verse{
+  background: linear-gradient(to bottom right, #AB1213,#f56642);
+  background-size: 200% 200%;
+  animation: gradient-move 2s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: 'Yatra One', cursive;
+  transition: all 0.3s ease;
+}
+
+.verse span{
+  font-size: 38px;
+  transition: all 0.3s ease;
+}
+
