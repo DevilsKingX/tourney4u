@@ -23,9 +23,6 @@ module.exports = async function (req, res) {
     const backgroundImage = await loadImage(`https://cdn.discordapp.com/attachments/816647219058835506/1117522132184875028/bracket_export.png`);
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
-    // Load the foreground image from a URL
-    const foregroundImage = await loadImage('https://cdn.discordapp.com/attachments/816647219058835506/1117522132184875028/bracket_export.png');
-    ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
 
     // Apply color composition operation to change the hue based on the provided hex value
     ctx.globalCompositeOperation = 'multiply';
