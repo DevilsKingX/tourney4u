@@ -3,6 +3,7 @@ export default async function TourneyFunc(req, res) {
     console.log('Request received')
     // Check if password is correct
     var { game,bg,password, hexCode } = req.query;
+    console.log(req.query)
     if (password !== 'apwinwab') {
       return res.status(401).json({ error: 'Unauthorized' });
     }
