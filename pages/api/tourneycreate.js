@@ -31,11 +31,11 @@ module.exports = async function (req, res) {
   try {
     // Load the background image from a URL
     console.log('Loading background image')
-    const backgroundImage = await loadImage(`./TourneyFiles/games/${game}/${bg}.png`);
+    const backgroundImage = await loadImage(`TourneyFiles/games/${game}/${bg}.png`);
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
     // Load the foreground image from a URL
-    const foregroundImage = await loadImage(`./TourneyFiles/brackets/${style}.png`);
+    const foregroundImage = await loadImage(`TourneyFiles/brackets/${style}.png`);
     ctx.drawImage(foregroundImage, 0, 0, canvas.width, canvas.height);
 
     // Apply color composition operation to change the hue based on the provided hex value
